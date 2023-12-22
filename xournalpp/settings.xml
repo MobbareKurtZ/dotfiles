@@ -6,16 +6,16 @@
   <property name="pressureMultiplier" value="1.68000000"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Portrait"/>
-  <property name="lastSavePath" value="/home/hannes/Plugg/MPSYS1/LP2/SSY130/handin/hip2"/>
-  <property name="lastOpenPath" value="/home/hannes/Plugg/MPSYS1/LP2/SSY130/tutorial"/>
+  <property name="lastSavePath" value="/home/hannes/Plugg/MPSYS1/LP2/SSY285/exams"/>
+  <property name="lastOpenPath" value="/home/hannes/Plugg/MPSYS1/LP2/SSY285/exams"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20.00000000"/>
   <property name="edgePanMaxMult" value="5.00000000"/>
   <property name="zoomStep" value="10.00000000"/>
   <property name="zoomStepScroll" value="2.00000000"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1000"/>
-  <property name="mainWndHeight" value="992"/>
+  <property name="mainWndWidth" value="936"/>
+  <property name="mainWndHeight" value="500"/>
   <property name="maximized" value="false"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
@@ -205,7 +205,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ffffff"/>
+      <attribute name="color" type="hex" value="000000"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>

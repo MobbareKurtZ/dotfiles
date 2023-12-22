@@ -106,17 +106,22 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 alias nvimconf="cd ~/.config/nvim/ && nvim"
 
-alias sd="cd ~ && cd \$(find * -type d | fzf)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="/usr/local/MATLAB/R2023a/bin/matlab:$PATH"
 export PATH="/home/hannes/.local/share/bob/nvim-bin:$PATH"
-
 export PATH=$PATH:/home/hannes/.spicetify
 
 setopt auto_cd
 cdpath=($HOME/Plugg/MPSYS1/LP2 $HOME/.config)
+
+alias sd="cd ~/Plugg && cd \$(find * -type d | fzf)"
+alias fd="cd ~ && cd \$(find * -type d | fzf)"
+fpdf() {
+    result=$(find "/home/hannes/" -type f -name '*.pdf' | fzf --bind "ctrl-r:reload(find '/home/hannes/' -type f -name '*.pdf')" --preview "pdftotext {} - | less")
+    [ -n "$result" ] && nohup zathura "$result" &> /dev/null & disown
+}
 
 clear
