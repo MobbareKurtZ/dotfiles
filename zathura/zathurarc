@@ -4,47 +4,49 @@ set selection-clipboard clipboard
 set synctex true
 set synctex-editor-command "nvr --remote-silent +%{line} %{input}"
 
-set notification-error-bg       "#2E3440"
-set notification-error-fg       "#BF616A"
-set notification-warning-bg     "#2E3440"
-set notification-warning-fg     "#D08770"
-set notification-bg             "#2E3440"
-set notification-fg             "#D8DEE9"
-
-set completion-bg               "#2E3440"
-set completion-fg               "#D8DEE9"
-set completion-group-bg         "#3B4252"
-set completion-group-fg         "#D8DEE9"
-set completion-highlight-bg     "#88C0D0"
-set completion-highlight-fg     "#3B4252"
-
-set index-bg                    "#2E3440"
-set index-fg                    "#8FBCBB"
-set index-active-bg             "#8FBCBB"
-set index-active-fg             "#2E3440"
-
-set inputbar-bg                 "#2E3440"
-set inputbar-fg                 "#E5E9F0"
-
-set statusbar-bg                "#2E3440"
-set statusbar-fg                "#E5E9F0"
-
-set highlight-color             "#D08770"
-set highlight-active-color      "#BF616A"
-
-set default-bg                  "rgba(46, 52, 64, 0.95)"
-set default-fg                  "#D8DEE9"
-set render-loading              "true"
-set render-loading-bg           "#2E3440"
-set render-loading-fg           "#434C5E"
-
-set recolor-lightcolor          "rgba(46, 52, 64, 0.0)"
-set recolor-darkcolor           "#ECEFF4"
 set recolor                     "true"
 
-map <F1> focus_inputbar ":set recolor-lightcolor 'rgba(46, 52, 64, 1.0)'"
-map <F2> focus_inputbar ":set default-bg 'rgba(46, 52, 64, 1.0)'"
+map <F1> focus_inputbar ":set recolor-lightcolor 'rgba(36, 39, 58, 1.0)'"
+map <F2> focus_inputbar ":set default-bg 'rgba(36, 39, 58, 1.0)'"
 map ! feedkeys "<F1><Return><F2><Return>"
-map <F3> focus_inputbar ":set recolor-lightcolor 'rgba(46, 52, 64, 0.0)'"
-map <F4> focus_inputbar ":set default-bg 'rgba(46, 52, 64, 0.95)'"
+map <F3> focus_inputbar ":set recolor-lightcolor 'rgba(36, 39, 58, 0.0)'"
+map <F4> focus_inputbar ":set default-bg 'rgba(36, 39, 58, 0.95)'"
 map @ feedkeys "<F3><Return><F4><Return>"
+
+set default-fg                "#CAD3F5"
+set default-bg 			          "rgba(36, 39, 58, 0.95)"
+
+set completion-bg		          "#363A4F"
+set completion-fg		          "#CAD3F5"
+set completion-highlight-bg	  "#575268"
+set completion-highlight-fg	  "#CAD3F5"
+set completion-group-bg		    "#363A4F"
+set completion-group-fg		    "#8AADF4"
+
+set statusbar-fg		          "#CAD3F5"
+set statusbar-bg		          "#363A4F"
+
+set notification-bg		        "#363A4F"
+set notification-fg		        "#CAD3F5"
+set notification-error-bg	    "#363A4F"
+set notification-error-fg	    "#ED8796"
+set notification-warning-bg	  "#363A4F"
+set notification-warning-fg	  "#FAE3B0"
+
+set inputbar-fg			          "#CAD3F5"
+set inputbar-bg 		          "#363A4F"
+
+set recolor-lightcolor		    "rgba(36, 39, 58, 0.0)"
+set recolor-darkcolor		      "#CAD3F5"
+
+set index-fg			            "#CAD3F5"
+set index-bg			            "#24273A"
+set index-active-fg		        "#CAD3F5"
+set index-active-bg		        "#363A4F"
+
+set render-loading-bg		      "#24273A"
+set render-loading-fg		      "#CAD3F5"
+
+set highlight-color		        "#575268"
+set highlight-fg              "#F5BDE6"
+set highlight-active-color	  "#F5BDE6"
